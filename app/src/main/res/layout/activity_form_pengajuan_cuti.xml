@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBg"
+    tools:context=".FormPengajuanCutiActivity">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarPengajuanCuti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1B2125"
+        app:subtitleTextColor="#00AF9C"
+        app:theme="@style/ToolbarTheme"
+        app:titleTextColor="#00AF9C" />
+    <ScrollView
+        android:layout_below="@id/toolbarPengajuanCuti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarSize="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtPesananTitles"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:text="NPK"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/cutiNpk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:text="1701082026"
+                    android:textColor="#00AF9C"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/txtPesananTitles"
+                    android:layout_marginTop="10dp"
+                    android:background="#1B2125" />
+            </RelativeLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="WAKTU CUTI"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/txtFormDate1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_bg"
+                    android:hint="DD/MM/YYYY"
+                    android:textColorHint="#00AF9C"
+                    android:textSize="15sp"
+                    android:textColor="#00AF9C"
+                    android:editable="false"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:padding="15dp" />
+                <EditText
+                    android:id="@+id/txtFormDate2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_weight="1"
+                    android:textColorHint="#00AF9C"
+                    android:background="@drawable/input_bg"
+                    android:hint="DD/MM/YYYY"
+                    android:textColor="#00AF9C"
+                    android:textSize="15sp"
+                    android:editable="false"
+                    android:drawableRight="@drawable/ic_baseline_keyboard_arrow_down_24"
+                    android:padding="15dp" />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="LAMA CUTI"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/cutiLama"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/input_bg"
+                android:hint="Lama"
+                android:inputType="numberDecimal"
+                android:textColorHint="#00AF9C"
+                android:textSize="15sp"
+                android:singleLine="true"
+                android:textColor="#00AF9C"
+                android:padding="15dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="KETERANGAN"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
+            <EditText
+                android:id="@+id/cutiKeterangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="5dp"
+                android:singleLine="true"
+                android:background="@drawable/input_bg"
+                android:hint="Keterangan"
+                android:textColorHint="#00AF9C"
+                android:textSize="15sp"
+                android:textColor="#00AF9C"
+                android:padding="15dp" />
+            <Button
+                android:id="@+id/btnAjukan"
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/button_rounded2"
+                android:text="Confirm"
+                android:textColor="#1B2125" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
